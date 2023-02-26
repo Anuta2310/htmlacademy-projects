@@ -1,0 +1,127 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  color: #2D2829;
+  background-color: #FBEBEA;
+}
+
+a {
+  text-decoration: none;
+  color: #2D2829;
+}
+
+/* Typography */
+
+.site-nav-item a {
+  font-size: .8rem;
+  line-height: 1.23;
+  text-transform: uppercase;
+}
+
+.site-nav-item a.active {
+  color: #F50049;
+}
+
+.phone {
+  font-size: .8rem;
+  line-height: 1.23;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4.9rem;
+  line-height: .9;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.65;
+}
+
+.catalog h3 {
+  font-size: 1.5rem;
+  line-height: 1.33;
+}
+
+.catalog a {
+  font-size: 1.125rem;
+  line-height: 1.33;
+}
+
+.promo p {
+  font-size: 2.5rem;
+  line-height: 1.32;
+  font-style: italic;
+}
+
+.btn {
+  font-size: .8rem;
+  font-weight: 700;
+  line-height: 2.08;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #F50049;
+}
+
+.features {
+  font-size: .9em;
+  line-height: 1.29;
+}
+
+.reviews h2,
+.advantages h2 {
+  text-align: center;
+}
+
+.reviews h3 {
+  font-size: 1.69rem;
+  line-height: 1.33;
+}
+
+.review-info {
+  font-size: 1.56rem;
+  line-height: 1.32;
+}
+
+.advantages-text {
+  font-size: 1.875rem;
+  line-height: 1.33;
+  font-style: italic;
+  text-align: center;
+}
+.advantages h3,
+.contacts h3 {
+  font-size: 1.25rem;
+}
+
+.contact-item address {
+  font-style: normal;
+}
+
+.social-item {
+  background-color: #fff;
+}
+
+/* Footer */
+
+.main-footer {
+  background-color: #E8E8E8;
+  font-size: .8rem;
+  line-height: 1.23;
+}
+
+.copyright {
+  text-transform: uppercase;
+  color: #888;
+}
+
+.advantages {
+  background: url('../img/berries.png') no-repeat left center;
+}
