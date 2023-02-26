@@ -1,0 +1,118 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: .75rem;
+  background-color: #FFFDFC;
+  color: #151413;
+}
+
+a {
+  text-decoration: none;
+  color: #151413;
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  height: 100vh;
+  width: 1366px;
+  display: flex;
+}
+
+.page-header {
+  width: 311px;
+
+  background-color: #151413;
+  padding-top: 2.5em;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.logo {
+  padding-left: 4.2em;
+}
+
+header a {
+    color: #FFFDFC;
+    font-size: .75rem;
+    line-height: 1.33;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.site-nav,
+.service-nav,
+.social-list {
+  padding: 2em 4.2em;
+  border-bottom: 1px solid rgba(255, 253, 252, 0.2);
+}
+
+.site-nav li:not(:first-child),
+.service-nav li:not(:first-child) {
+  margin-top: 1.5em;
+}
+
+.site-nav-item .active {
+  text-decoration: underline 1px #DC5B34;
+  text-underline-offset: .17em;
+  text-underline-position: under;
+}
+
+.social-list {
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 253, 252, 0.2);
+  display: flex;
+}
+.social-list li {
+  margin-right: 2em;
+}
+
+main {
+  padding: 3.7em 4.3em;
+}
+
+.breadcrumbs {
+  text-transform: uppercase;
+  display: flex;
+  margin-bottom: 1.67em;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 1em;
+  content: url('../img/arrow.svg');
+}
+.breadcrumbs .active {
+  color: rgba(21, 20, 19, 0.6);
+}
+
+.banner {
+  width: 900px;
+  height: 365px;
+  background-image: url('../img/photo.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner h2 {
+  max-width: 362px;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  
+}
+.banner span {
+  background-color: #DC5B34;
+}
