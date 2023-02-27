@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url('../fonts/PTSansNarrow-Bold.ttf');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url('../fonts/PTSans-Regular.ttf');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url('../fonts/PTSans-Bold.ttf');
+  font-weight: 700;
+  font-display: swap;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: #FBF7F4;
+  color: #242424;
+}
+
+a {
+  text-decoration: none;
+  color: #242424;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Buttons */
+
+.button {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: #000;
+}
+.button-light {
+  background-color: #FFF;
+  color: #000;
+}
+
+/* Page Header */
+
+.page-header {
+  background-color: #000;
+}
+.page-header a {
+  color: #FFF;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Main */
+
+.main-index {
+  background: #000 url('../img/interior.jpg') no-repeat;
+  background-size: 100% auto;
+  color: #fff;
+}
+
+.advantages-list {
+  text-align: center;
+}
+.advantages-item h3 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 2rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.index-columns {
+  background: #FBF7F4 url('../img/noisy-texture.png');
+  color: #242424;
+}
+
+.services,
+.gallery {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.services-title,
+.gallery-title,
+.contacts-title,
+.appointment-title {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.services-list {
+  font-size: 1.25rem;
+}
+.services-price {
+  color: #AF7842;
+}
+
+.contacts-title,
+.appointment-title {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.contacts-subtitle {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #AF7842;
+}
+
+.contacts-address,
+.contacts-schedule,
+.footer-contacts-address {
+  font-style: normal;
+  font-weight: 700;
+}
+.contacts-phone {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.appointment > p {
+  font-size: .875rem;
+  color: #595959;
+}
+
+.appointment-form {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.appointment-form input,
+.newsletter-form input {
+  font-size: 1rem;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #BDBDBD;
+}
+
+/* Footer */
+
+.page-footer {
+  background: #242424 url('../img/noisy-texture.png');
+  color: #FFF;
+}
+p.about-text {
+  font-size: .875rem;
+  font-weight: 700;
+}
+.footer-contacts a {
+  color: #FFF;
+  font-size: 1.25rem;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.page-footer h2 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+p.about-text a {
+  color: #DBB590;
+}
+
+/* catalog.html */
+
+.main-inner {
+  background: #FBF7F4 url('../img/noisy-texture.png');
+}
+.main-inner h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 2rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.breadcrumbs-item:first-child {
+  text-decoration: underline;
+}
+.breadcrumbs-item:last-child {
+  color: #595959;
+}
+
+.catalog-filter-title {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.control-label {
+  font-weight: 700;
+}
+
+.sorting-container {
+  background-color: #FFF;
+}
+.select-control {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #242424;
+}
+
+.product-card {
+  background-color: #FFF;
+}
+.product-card-titel {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+}
+.product-card-price {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #814B18;
+}
+
+.pagination {
+  background-color: #FFF;
+}
+.pagination-link {
+  color: #FFF;
+  background-color: #000;
+  font-weight: 700;
+  line-height: 1;
+}
+.pagination-current {
+  color: #000;
+  background-color: #fff;
+}
+.pagination-disabled {
+  background-color: #595959;
+}
