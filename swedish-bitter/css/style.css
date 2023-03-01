@@ -1,0 +1,113 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #303030;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Header */
+
+.site-nav-item a {
+  color: #9A9A9A;
+}
+
+/* Hero */
+
+.hero h1 {
+  font-size: 45px;
+  line-height: 55px;  
+}
+
+/* Quote */
+
+.quote {
+  text-align: center;
+}
+
+.quote p {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.quote footer {
+  font-weight: 700;
+}
+
+/* Fact Articles */
+
+.fact-article h2 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 55px;
+  color: #A4C58C;
+  text-decoration: underline 2px;
+  text-underline-offset: 10px;
+  text-underline-position: under;
+}
+
+.fact-article h3 {
+  font-size: 20px;
+  line-height: 35px;
+  color: #000;
+}
+
+.fact-article p {
+  line-height: 30px;
+  color: #000;
+}
+
+/* Symptoms */
+
+.symptoms h2 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.symptoms-item {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.cta-button {
+  background-color: #7EB252;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+/* Gallery */
+
+.gallery h2 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+/* Footer */
+
+.page-footer {
+  background-color: #F6F9F3;
+}
+
+.footer-link {
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: underline;
+  color: #9A9A9A;
+}
+
+.footer-nav-title,
+.footer-menu-item a {
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer-menu-item a {
+  color: #000;
+}
