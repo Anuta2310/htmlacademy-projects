@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PTSans-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PTSans-Bold.ttf');
+  font-weight: 700;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  color: #000;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  background-color: #756257;
+  color: #FFF;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.hero-text {
+  text-align: center;
+  font-size: 22px;
+  line-height: 36px;
+  color: #333;
+}
+p.lead {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.hero {
+  background: url('../img/index-bg.jpg') no-repeat;
+  text-align: center;
+}
+
+.advantages-list > li:first-child,
+.advantages-list > li:nth-of-type(2) {
+  background-color: #83B3D3;
+  color: #FFF;
+}
+
+.newsletter {
+  background: url('../img/footer-bg.jpg') no-repeat;
+}
+
+/* hotes.html */
+
+.filter-container {
+  background: url('../img/hotels-bg.jpg') no-repeat;
+}
+.inner-newsletter {
+  background-color: #FFF;
+  background-image: none;
+}
