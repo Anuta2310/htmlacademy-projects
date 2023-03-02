@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
@@ -11,28 +14,65 @@ a {
   color: #000;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Header */
 
+.page-header {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 35px 90px;
+  margin-bottom: 15px;
+}
 .site-nav-item a {
   color: #9A9A9A;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 197px;
+}
+.site-nav {
+  margin: 0 auto 0 60px;
+  display: flex;
+}
+.site-nav-item:not(:last-child) {
+  margin-right: 35px;
 }
 
 /* Hero */
 
+.main-content {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 90px;
+}
+.hero {
+  margin-bottom: 110px;
+}
 .hero h1 {
   font-size: 45px;
-  line-height: 55px;  
+  line-height: 55px;
+  margin: 0 0 35px 30px;
 }
 
 /* Quote */
 
 .quote {
   text-align: center;
+  width: 700px;
+  margin: 0 auto 110px;
+  padding: 45px 0;
 }
 
 .quote p {
   font-size: 24px;
   line-height: 40px;
+  margin-bottom: 25px;
 }
 
 .quote footer {
@@ -40,6 +80,30 @@ a {
 }
 
 /* Fact Articles */
+
+.fact-article {
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fact-article-1 {
+  flex-direction: row-reverse;
+  margin-bottom: 60px;
+}
+
+.fact-article-2 {
+  margin-bottom: 110px;
+}
+
+.fact-article-content {
+  width: 560px;
+}
+
+.fact-article img {
+  width: 420px;
+}
 
 .fact-article h2 {
   font-weight: 400;
@@ -49,24 +113,40 @@ a {
   text-decoration: underline 2px;
   text-underline-offset: 10px;
   text-underline-position: under;
+  margin-bottom: 30px;
 }
 
 .fact-article h3 {
   font-size: 20px;
   line-height: 35px;
   color: #000;
+  margin-bottom: 20px;
 }
 
 .fact-article p {
   line-height: 30px;
   color: #000;
+  margin-bottom: 15px;
 }
 
 /* Symptoms */
 
+.symptoms {
+  margin-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.symptoms-column,
+.symptoms img {
+  width: 500px;
+}
+
 .symptoms h2 {
   font-size: 40px;
   line-height: 50px;
+  margin-bottom: 90px;
 }
 
 .symptoms-item {
@@ -85,15 +165,52 @@ a {
 
 /* Gallery */
 
+.gallery {
+  width: 930px;
+  margin: 0 auto;
+}
+
 .gallery h2 {
   font-size: 40px;
   line-height: 50px;
+  margin-bottom: 90px;
+}
+
+.gallery-wrapper {
+  display: flex;
+}
+
+.active-img {
+  width: 740px;
+  margin-right: 20px;
+}
+
+.gallery-preview {
+  width: 170px;
+}
+
+.preview-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 /* Footer */
 
+.footer-container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .page-footer {
   background-color: #F6F9F3;
+  padding: 90px 0;
+  margin-top: 110px;
+}
+
+.footer-column {
+  width: 210px;
 }
 
 .footer-link {
@@ -101,6 +218,20 @@ a {
   line-height: 16px;
   text-decoration: underline;
   color: #9A9A9A;
+}
+
+.footer-nav {
+  width: 705px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav-item {
+  width: 175px;
+}
+
+.footer-menu {
+  padding: 0;
 }
 
 .footer-nav-title,
