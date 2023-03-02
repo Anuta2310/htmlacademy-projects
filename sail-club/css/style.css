@@ -1,3 +1,8 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
@@ -10,7 +15,38 @@ a {
   color: #163152;
 }
 
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
 /* Header */
+
+.page-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  margin: 0 40px 0 auto;
+  display: flex;
+}
+
+.nav-menu-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .nav-menu,
 .footer-nav h2 {
@@ -21,14 +57,31 @@ a {
 
 /* Hero */
 
-h1 {
+.hero {
+  margin-bottom: 120px;
+}
+
+.hero h1 {
   font-size: 2.75rem;
   line-height: 1.36;
   font-weight: 400;
   font-style: italic;
+  margin-bottom: 40px;
+  margin-left: 70px;
 }
 
-/* Team & Children */
+/* Events */
+
+.event {
+  width: 1030px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-content {
+  width: 400px;
+}
 
 p.date {
   font-size: .875rem;
@@ -36,10 +89,10 @@ p.date {
   text-transform: uppercase;
 }
 
-.team h2,
-.children h2,
+.event h2,
 .contacts h2,
-.news h2 {
+.news h2,
+.gallery h2 {
   font-size: 1.5rem;
   line-height: 1.42;
   text-decoration: underline 2px #00C6BD;
@@ -47,15 +100,47 @@ p.date {
   text-underline-position: under;
 }
 
-.children p,
-.children h2 {
+.event1 {
+  margin-bottom: 100px;
+}
+
+.event2 {
+  flex-direction: row-reverse;
   text-align: right;
+  margin-bottom: 120px;
+}
+
+.event h2 {
+  margin: 10px 0 35px;
+}
+
+/* Gallery */
+
+.gallery {
+  margin-bottom: 120px;
+}
+
+.gallery-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 /* News */
 
-.news h2 {
+.news {
+  width: 770px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+.news h2,
+.gallery h2 {
   text-align: center;
+  margin-bottom: 55px;
 }
 
 .news-img figcaption {
@@ -93,11 +178,37 @@ blockquote p {
 
 /* Contacts */
 
+.contacts {
+  width: 1010px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.38;
+  margin-bottom: 120px;
+}
+
+.contacts h2 {
+  margin-bottom: 35px;
+}
+
+.address li:not(:last-child) {
+  margin-bottom: 15px;
+  display: flex;
+}
+
 .contacts h3 {
   font-size: 1rem;
+  margin-right: 10px;
 }
-.contacts {
-  line-height: 1.38;
+
+.social-list {
+  display: flex;
+  margin-top: 15px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 15px;
 }
 
 /* Footer */
@@ -110,4 +221,32 @@ blockquote p {
 .footer-nav a {
   font-size: .875rem;
   line-height: 1.14;
+}
+
+.page-footer {
+  border-top: 1px solid rgba(22, 49, 82, 0.1);
+}
+
+.footer-container {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-nav {
+  width: 870px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  width: 300px;
+}
+
+.footer-nav-item {
+  width: 165px;
+}
+
+.footer-nav h2 {
+  margin-bottom: 20px;
 }
