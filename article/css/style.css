@@ -106,7 +106,10 @@ a {
 }
 
 .tag a:hover,
-.post-share:hover {
+.tag a:focus,
+.post-share:hover,
+.post-share:focus {
+  outline: none;
   opacity: 0.7;
 }
 
