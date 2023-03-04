@@ -184,6 +184,8 @@ p.date {
 
 .yacht-item li {
   margin: 4px 0;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .yacht-price {
