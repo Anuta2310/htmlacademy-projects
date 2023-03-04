@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
+  line-height: 24px;
   color: #163152;
   background-color: #FDFDFF;
 }
@@ -122,7 +122,8 @@ p.date {
 .event h2,
 .contacts h2,
 .news h2,
-.gallery h2 {
+.gallery h2,
+.rent h2 {
   font-size: 24px;
   line-height: 34px;
   text-decoration: underline 2px #00C6BD;
@@ -144,8 +145,61 @@ p.date {
   margin: 10px 0 35px;
 }
 
+/* Rent */
+
+.rent h2 {
+  margin-bottom: 55px;
+}
+
+.yacht-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.yacht-item {
+  width: 370px;
+  box-sizing: border-box;
+  padding: 30px;
+  box-shadow: 0px 4px 30px rgba(22, 49, 82, 0.12);
+}
+
+.yacht-item h3 {
+  margin: 21px 0 18px;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.yacht-item p {
+  font-size: 14px;
+}
+
+.yacht-item ul {
+  list-style: url('../img/disc1.svg');
+  padding-left: 14px;
+  margin: 15px 0 29px;
+}
+
+.yacht-item li {
+  margin: 4px 0;
+}
+
+.yacht-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yacht-price b {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
 /* Gallery */
 
+.rent,
 .gallery {
   margin-bottom: 120px;
 }
