@@ -18,6 +18,10 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+}
+
 /* Header */
 
 .page-header {
@@ -67,6 +71,8 @@ ul {
   width: 700px;
   margin: 0 auto 110px;
   padding: 45px 0;
+  border-top: 2px solid #A4C58C;
+  border-bottom: 2px solid #A4C58C;
 }
 
 .quote p {
@@ -149,18 +155,31 @@ ul {
   margin-bottom: 90px;
 }
 
+.symptoms-list {
+  list-style: disc;
+  margin-bottom: 70px;
+}
+
 .symptoms-item {
   font-size: 14px;
   text-transform: uppercase;
+  margin: 25px 0;
 }
 
 .cta-button {
+  position: relative;
+  padding: 19px 169px 19px 121px;
   background-color: #7EB252;
   color: #FFF;
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   text-transform: uppercase;
+}
+.cta-button::after {
+  position: absolute;
+  right: 121px;
+  content: url('../img/arrow.svg');
 }
 
 /* Gallery */
@@ -213,11 +232,17 @@ ul {
   width: 210px;
 }
 
+.footer-column .logo {
+  margin-bottom: 35px;
+}
+
 .footer-link {
+  display: block;
   font-size: 12px;
   line-height: 16px;
   text-decoration: underline;
   color: #9A9A9A;
+  margin: 15px 0;
 }
 
 .footer-nav {
@@ -241,4 +266,11 @@ ul {
 }
 .footer-menu-item a {
   color: #000;
+}
+
+.footer-nav-title {
+  margin-bottom: 30px;
+}
+.footer-menu-item:not(:last-child) {
+  margin: 15px 0;
 }
