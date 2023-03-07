@@ -25,12 +25,19 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'PT Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.4;
   background-color: #FBF7F4;
   color: #242424;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 a {
@@ -40,6 +47,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+img {
+  display: block;
 }
 
 /* Buttons */
@@ -71,6 +82,21 @@ ul {
   text-transform: uppercase;
 }
 
+.main-nav {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  width: 430px;
+}
+
+.nav-user {
+  max-width: 250px;
+  margin-left: auto;
+}
+
 /* Main */
 
 .main-index {
@@ -79,9 +105,33 @@ ul {
   color: #fff;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 64px auto;
+}
+
+.advantages {
+  margin-bottom: 60px;
+}
+
 .advantages-list {
   text-align: center;
+  display: flex;
+  gap: 54.5px;
 }
+
+.advantages-item {
+  width: 277px;
+}
+
 .advantages-item h3 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 2rem;
@@ -92,6 +142,11 @@ ul {
 .index-columns {
   background: #FBF7F4 url('../img/noisy-texture.png');
   color: #242424;
+  display: flex;
+}
+
+.index-columns section {
+  padding: 40px;
 }
 
 .services,
@@ -99,6 +154,7 @@ ul {
   font-family: 'PT Sans Narrow', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  width: 470px;
 }
 
 .services-title,
@@ -167,10 +223,28 @@ ul {
   background: #242424 url('../img/noisy-texture.png');
   color: #FFF;
 }
+
+.page-footer-container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+}
+
 p.about-text {
   font-size: .875rem;
   font-weight: 700;
 }
+
+.footer-contacts {
+  width: 200px;
+  margin-right: 130px;
+}
+
+.footer-social {
+  max-width: 190px;
+  margin-left: auto;
+}
+
 .footer-contacts a {
   color: #FFF;
   font-size: 1.25rem;
@@ -189,6 +263,11 @@ p.about-text a {
 
 /* catalog.html */
 
+.nav-logo {
+  width: 140px;
+  margin-right: 100px;
+}
+
 .main-inner {
   background: #FBF7F4 url('../img/noisy-texture.png');
 }
@@ -204,6 +283,19 @@ p.about-text a {
 }
 .breadcrumbs-item:last-child {
   color: #595959;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.catalog-right-column {
+  width: 700px;
 }
 
 .catalog-filter-title {
