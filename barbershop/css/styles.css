@@ -91,7 +91,8 @@ img {
   outline: 2px solid #DBB590;
 }
 
-.button:disabled {
+.button:disabled,
+.slider-button:disabled {
   background-color: #595959;
   color: #E7E7E7;
 }
@@ -308,6 +309,7 @@ img {
   background-color: #814B18;
   outline: 2px solid #DBB590;
 }
+
 .slider-prev {
   transform: rotate(180deg);
 }
@@ -658,7 +660,7 @@ p.about-text a {
 .range-scale {
   position: relative;
   height: 4px;
-  margin: 16px 0;
+  margin: 8px 0 16px;
   background-color: #242424;
   border-radius: 2px;
 }
@@ -957,6 +959,7 @@ p.about-text a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 16px 16px;
+  width: 56px;
 }
 
 .pagination-prev {
