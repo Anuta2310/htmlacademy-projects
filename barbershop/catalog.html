@@ -69,18 +69,26 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цена</legend>
-            <button class="range-toggle toggle-min" type="button">
-              <span class="visually-hidden">Изменить минимальную цену</span>
-            </button>
-            <button class="rangle-toggle toggle-max" type="button">
-              <span class="visually-hidden">Изменить максимальную цену</span>
-            </button>
-            <label class="catalog-filter-label">
-              от <input class="catalog-filter-input" type="number" name="min-price"> ₽
-            </label>
-            <label class="catalog-filter-label">
-              до <input class="catalog-filter-input" type="number" name="max-price"> ₽
-            </label>
+            <div class="range">
+              <div class="range-scale">
+                <div class="range-bar" style="left: 42px; right: 42px">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
+              </div>
+              <div class="range-input-wrapper">
+                <label class="range-label">
+                  от <input class="range-input" type="number" min="0" value="50" name="min-price"> ₽
+                </label>
+                <label class="range-label">
+                  до <input class="range-input" type="number" min="0" value="1500" name="max-price"> ₽
+                </label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Производители</legend>
@@ -162,12 +170,14 @@
         <div class="catalog-right-column">
           <div class="sorting-container">
             <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
-              <label class="visually-hidden" for="sorting">Сортировка</label>
-              <select class="select-control" name="sorting" id="sorting">
-                <option value="popular">Сначала популярное</option>
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="expensive">Сначала дорогое</option>
-              </select>
+              <div class="select">
+                <label class="visually-hidden" for="sorting">Сортировка</label>
+                <select class="select-control" name="sorting" id="sorting">
+                  <option value="popular">Сначала популярное</option>
+                  <option value="cheap">Сначала дешёвое</option>
+                  <option value="expensive">Сначала дорогое</option>
+                </select>
+              </div>
               <button class="visually-hidden" type="submit">Отсортировать продукты</button>
             </form>
             <a class="card-grid-toggle" href="#">
@@ -293,7 +303,7 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="newsletter-email">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="newsletter-field" type="email" placeholder="email@htmlacademy.ru" name="newsletter-email"
+            <input class="field newsletter-field" type="email" placeholder="email@htmlacademy.ru" name="newsletter-email"
               id="newsletter-email" required>
           </p>
           <button class="button newsletter-btn" type="submit">

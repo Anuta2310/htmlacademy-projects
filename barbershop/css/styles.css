@@ -45,7 +45,7 @@ a {
   color: #242424;
 }
 
-ul {
+ul, ol {
   list-style: none;
 }
 
@@ -289,6 +289,61 @@ img {
   padding: 40px;
 }
 
+/* Slider */
+
+.slider-button {
+  width: 48px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  background: #000 url('../img/icons/arrow.svg') no-repeat center;
+}
+.slider-button:hover {
+  background-color: #814B18;
+}
+.slider-button:focus {
+  background-color: #814B18;
+  outline: 2px solid #DBB590;
+}
+.slider-prev {
+  transform: rotate(180deg);
+}
+.slider-pagination{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.slider-pagination-btn {
+  width: 8px;
+  height: 8px;
+  background-color: #BDBDBD;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-pagination-btn.current {
+  background-color: #242424;
+}
+.slider-pagination-btn:hover {
+  background-color: #AF7842;
+}
+.slider-pagination-btn:focus {
+  background-color: #DBB590;
+  outline: none;
+}
+
+.slider {
+  position: relative;
+}
+.slider-controls {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
 .services,
 .gallery {
   font-family: 'PT Sans Narrow', sans-serif;
@@ -398,21 +453,43 @@ img {
   margin-bottom: 24px;
 }
 
+/* Appointment Form */
+
 .appointment-form {
   font-weight: 700;
   text-transform: uppercase;
   display: grid;
-  grid-template-columns: 114px 74px 208px;
+  grid-template-columns: 117px 75px 206px;
   gap: 19px 17px;
 }
 
-.appointment-form input,
-.newsletter-form input {
-  font-size: 1rem;
+.field {
+  font-size: 16px;
   font-family: 'PT Sans', sans-serif;
   line-height: 1.5;
   font-weight: 700;
+  padding: 10px 16px;
+  border: 2px solid #242424;
+}
+.field::placeholder {
   color: #BDBDBD;
+}
+.field:hover {
+  border: 2px solid #AF7842;
+  cursor: pointer;
+}
+.field:focus {
+  border: 2px solid #AF7842;
+  outline: 2px solid #DBB590;
+}
+.field.error {
+  border: 2px solid #EA5454;
+}
+.field:disabled,
+.field:disabled:hover {
+  color: #595959;
+  background-color: #E7E7E7;
+  border: 2px solid #595959;
 }
 
 .appointment-form-name {
@@ -431,6 +508,21 @@ img {
 .field-group label,
 .form-label {
   margin-bottom: 8px;
+}
+
+.form-label-icon {
+  position: relative;
+  padding-right: 16px;
+}
+
+.info {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: transparent url('../img/icons/info.svg') no-repeat center;
+  cursor: pointer;
+  margin: 3px 0 0 2px;
 }
 
 /* Footer */
@@ -468,6 +560,7 @@ p.about-text {
 
 .newsletter-form {
   display: flex;
+  align-items: center;
 }
 
 .footer-social {
@@ -551,6 +644,72 @@ p.about-text a {
   color: #595959;
 }
 
+/* Filter */
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: #242424;
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #AF7842;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #242424;
+  background-color: #FFF;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -8px;
+}
+.toggle-min {
+  left: -10px;
+}
+.toggle-max {
+  right: -10px;
+}
+.range-toggle:hover {
+  background-color: #DBB590;
+}
+.range-toggle:active,
+.range-toggle:focus {
+  background-color: #DBB590;
+  outline: 3px solid #AF7842;
+}
+
+.range-input-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.range-label {
+  display: flex;
+  gap: 4px;
+}
+.range-input {
+  width: 40px;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+
+  appearance: textfield;
+}
+.range-input::-webkit-inner-spin-button,
+.range-input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .catalog-products {
   display: flex;
 }
@@ -564,14 +723,76 @@ p.about-text a {
   width: 700px;
 }
 
+.catalog-filter-group {
+  margin-bottom: 40px;
+  border: none;
+}
 .catalog-filter-title {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 .control-label {
   font-weight: 700;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #242424;
+  left: 0;
+  top: 2px;
+}
+.control:hover .control-mark,
+.control-input:focus + .control-mark {
+  border: 2px solid #AF7842;
+  cursor: pointer;
+}
+.control-input:disabled + .control-mark {
+  border: 2px solid #BDBDBD;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background-color: #242424;
+  content: "";
+  top: 7.5px;
+  left: 2.5px;
+}
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  transform: rotate(45deg);
+}
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  transform: rotate(-45deg);
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4.4px;
+  left: 4.4px;
+  width: 8px;
+  height: 8px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
 }
 
 .sorting-container {
