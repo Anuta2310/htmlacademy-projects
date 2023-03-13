@@ -31,10 +31,36 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link cart-btn" href="#">
             <svg class="nav-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.09 6 3.577.905 3.662 0h8.676l.086.905L12.909 6h2.724l-.14 1.124-1 8-.11.876H1.617l-.11-.876-1-8L.368 6H3.09ZM5.1 6h5.8l-.38-4H5.48L5.1 6Zm-1.717 8-.75-6h10.734l-.75 6H3.383ZM8.5 9.5v3h2v-3h-2Zm-3 3v-3h2v3h-2Z" clip-rule="evenodd"/></svg>
             <span class="visually-hidden">Корзина</span>
           </a>
+          <div class="popover popover-cart">
+            <button class="popover-close-btn button button-light">
+              2 <span class="visually-hidden">Закрыть</span>
+            </button>
+            <div class="popover-content">
+              <h2>Корзина</h2>
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <p>Стрижка машинкой</p>
+                  <p class="cart-price">800 ₽</p>
+                  <button class="button">
+                    <svg class="delete" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="m3.42 1 .283-.496L3.991 0h8.017l.289.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42Zm.543 13L2.629 3H13.37l-1.334 11H3.963Zm5.04-9.071-.5 7 1.994.142.5-7-1.994-.142Zm-3.5 7.142-.5-7 1.994-.142.5 7-1.994.142Z" clip-rule="evenodd"/></svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <p>Стрижка усов</p>
+                  <p class="cart-price">1200 ₽</p>
+                  <button class="button">
+                    <svg class="delete" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="m3.42 1 .283-.496L3.991 0h8.017l.289.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42Zm.543 13L2.629 3H13.37l-1.334 11H3.963Zm5.04-9.071-.5 7 1.994.142.5-7-1.994-.142Zm-3.5 7.142-.5-7 1.994-.142.5 7-1.994.142Z" clip-rule="evenodd"/></svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-link-login" href="#">
@@ -233,6 +259,37 @@
       </section>
     </div>
   </footer>
+  <div class="modal-container modal-close">
+    <div class="modal modal-auth">
+      <button class="button button-light modal-close-btn">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2>Личный кабинет</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group">
+            <label for="auth-login" class="visually-hidden">Логин</label>
+            <input class="field" type="text" id="auth-login" name="auth-login" placeholder="Логин" required>
+          </p>
+          <p class="field-group">
+            <label for="auth-pswd" class="visually-hidden">Пароль</label>
+            <input class="field" type="password" id="auth-pswd" name="auth-pswd" placeholder="Пароль" required>
+          </p>
+          <p class="field-group user-options">
+            <label class="control">
+              <input type="checkbox" class="visually-hidden control-input">
+              <span class="control-mark"></span>
+              <span class="control-label">Запомнить меня</span>
+            </label>
+            <a href="#">Забыл пароль</a>
+          </p>
+          <button class="button" type="submit">войти</button>
+          <a class="button button-light" href="#">Регистрация</a>
+        </form>
+      </section>
+    </div>
+  </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
