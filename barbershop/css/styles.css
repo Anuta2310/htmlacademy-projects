@@ -30,6 +30,7 @@ html {
 }
 
 body {
+  min-width: 1020px;
   font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   line-height: 1.4;
@@ -247,8 +248,9 @@ img {
 
 .advantages-list {
   text-align: center;
-  display: flex;
-  gap: 54.5px;
+  display: grid;
+  grid-template-columns: repeat(3, 277px);
+  gap: 30px 54.5px;
 }
 
 .advantages-item {
@@ -267,7 +269,7 @@ img {
 .advantages-item h3::after {
   position: absolute;
   content: '';
-  top: 54px;
+  bottom: -40px;
   left: 50%;
   width: 14px;
   height: 14px;
@@ -620,6 +622,7 @@ p.about-text a {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 32px;
 }
 .breadcrumbs-item {
@@ -647,10 +650,15 @@ p.about-text a {
 
 /* Filter */
 
+.range {
+  max-width: 220px;
+  overflow: auto;
+}
+
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 16px;
+  margin: 16px 0;
   background-color: #242424;
   border-radius: 2px;
 }
@@ -799,6 +807,7 @@ p.about-text a {
 .sorting-container {
   background-color: #FFF;
   display: flex;
+  flex-wrap: wrap;  
   padding: 16px;
   margin-bottom: 16px;
   box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
@@ -923,13 +932,14 @@ p.about-text a {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
 .pagination-link {
   display: block;
-  width: 50px;
-  height: 44px;
+  min-width: 50px;
+  min-height: 44px;
   padding: 14px 20px;
   color: #FFF;
   background-color: #000;
@@ -959,6 +969,7 @@ p.about-text a {
 .pagination-show-more {
   margin-left: auto;
   padding: 14px 20px;
+  max-width: 170px;
 }
 
 /* Popover */
