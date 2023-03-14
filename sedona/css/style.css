@@ -20,8 +20,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   min-width: 1280px;
   height: 100%;
   font-family: 'PT Sans', sans-serif;
@@ -31,9 +29,13 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
+  height: 100%;
   margin: 0 auto;
   background-color: #FFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -191,7 +193,80 @@ img {
 
 .page-footer {
   margin-top: auto;
+  border-top: 1px solid #E6E6E6;
 }
+
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 72px;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icon svg {
+  fill: #83B3D3;
+}
+.social-icon:hover svg,
+.social-icon:focus svg {
+  fill: #68A2CA;
+}
+.social-icon:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 10px;
+  outline: none;
+}
+.social-icon:active {
+  opacity: 0.3;
+}
+
+.footer-address {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 1;
+}
+.footer-phone,
+.footer-logo {
+  display: block;
+  padding: 15px;
+  border: 3px solid transparent;
+}
+.footer-phone:hover{
+  color: #756257;
+}
+.footer-logo:hover svg,
+.footer-logo:focus svg {
+  fill: #756257;
+}
+
+.footer-phone:focus,
+.footer-logo:focus {
+  color: #756257;
+  border: 3px solid #83B3D3;
+  border-radius: 10px;
+  outline: none;
+}
+.footer-phone:active,
+.footer-logo:active {
+  opacity: 0.3;
+}
+
+
+
+
+
+
 
 .hero-text {
   text-align: center;
