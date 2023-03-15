@@ -270,6 +270,10 @@ img {
 
 /* Hero */
 
+.main-index {
+  background-color: #FFF;
+}
+
 .welcome-img {
   margin: 0 auto;
 }
@@ -298,7 +302,6 @@ img {
   text-align: center;
   font-size: 22px;
   line-height: 36px;
-  background: #FFF;
   color: #333;
 }
 
@@ -370,6 +373,7 @@ p.lead {
 .advantages-item p {
   max-width: 250px;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .advantages-item h4 {
@@ -399,6 +403,39 @@ p.lead {
 
 .advantages-item:nth-of-type(4) h4::before {
   background-image: url('../img/icons/gift.svg');
+}
+
+/* Search */
+
+.search {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.search b {
+  display: block;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.search p {
+  margin-bottom: 56px;
+  font-size: 22px;
+  line-height: 1.18;
+  color: #333;
+}
+
+.search-btn {
+  width: 575px;
+  height: 60px;
+  padding: 15px;
+  font-size: 20px;
+  line-height: 1.8;
+  border-radius: 10px;
 }
 
 /* Newsletter */
