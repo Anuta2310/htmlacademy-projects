@@ -124,7 +124,7 @@
           <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="newsletter-email">Ваш email</label>
-            <input class="" id="newsletter-email" name="newsletter-email" type="email" placeholder="Ваш e-mail"
+            <input class="input" id="newsletter-email" name="newsletter-email" type="email" placeholder="Ваш e-mail"
               required>
             <button class="btn btn-blue newsletter-btn" type="submit">Подписаться</button>
           </form>
@@ -188,14 +188,14 @@
         <div class="form-field">
           <label for="arrival">Дата заезда:</label>
           <div class="date-field">
-            <input class="date" type="text" name="arrival" id="arrival" value="27 апреля 2020">
+            <input class="date input" type="text" name="arrival" id="arrival" value="27 апреля 2020" placeholder="Укажите дату">
             <p class="warning fail">Мы не можем отправить вас в прошлое.</p>
           </div>
         </div>
         <div class="form-field">
           <label for="departure">Дата выезда:</label>
           <div class="date-field">
-            <input class="date" type="text" name="departure" id="departure" value="1 сентября 2021">
+            <input class="date input" type="text" name="departure" id="departure" value="1 сентября 2021" placeholder="Укажите дату">
             <p class="warning success">На эти даты есть свободные номера. Пока есть.</p>
           </div>
         </div>
@@ -204,7 +204,7 @@
           <button class="minus" type="button">
             <span class="visually-hidden">Минус 1</span>
           </button>
-          <input type="number" name="adults" id="adults" min="1" value="2">
+          <input class="input" type="number" name="adults" id="adults" min="1" value="2">
           <button class="plus" type="button">
             <span class="visually-hidden">Плюс 1</span>
           </button>
@@ -218,7 +218,7 @@
           <button class="minus" type="button">
             <span class="visually-hidden">Минус 1</span>
           </button>
-          <input type="number" name="kids" id="kids" min="0" value="1">
+          <input class="input" type="number" name="kids" id="kids" min="0" value="1">
           <button class="plus" type="button">
             <span class="visually-hidden">Плюс 1</span>
           </button>
