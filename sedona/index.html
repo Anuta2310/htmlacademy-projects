@@ -188,14 +188,14 @@
         <div class="form-field">
           <label for="arrival">Дата заезда:</label>
           <div class="date-field">
-            <input class="date" type="date" name="arrival" id="arrival">
+            <input class="date" type="text" name="arrival" id="arrival" value="27 апреля 2020">
             <p class="warning fail">Мы не можем отправить вас в прошлое.</p>
           </div>
         </div>
         <div class="form-field">
           <label for="departure">Дата выезда:</label>
           <div class="date-field">
-            <input class="date" type="date" name="departure" id="departure">
+            <input class="date" type="text" name="departure" id="departure" value="1 сентября 2021">
             <p class="warning success">На эти даты есть свободные номера. Пока есть.</p>
           </div>
         </div>
@@ -211,9 +211,9 @@
         </div>
         <div class="form-field guests">
           <label class="kids" for="kids">Дети:
-            <button class="info" type="button">
-              <span class="visually-hidden">Дополнительная информация</span>
-            </button>
+            <span class="tooltip">
+              <span class="tooltiptext">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span>
           </label>
           <button class="minus" type="button">
             <span class="visually-hidden">Минус 1</span>

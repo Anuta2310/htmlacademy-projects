@@ -631,14 +631,10 @@ p.success {
   border-radius: 4px;
 }
 
-.search-form input[type="date"] {
+.search-form input[type="text"] {
   width: 420px;
 }
-.search-form input[type="date"]::-webkit-inner-spin-button,
-.search-form input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    /* -webkit-appearance: none; */
-}
+
 .search-form input[type="number"] {
   width: 132px;
   text-align: center;
@@ -687,7 +683,7 @@ button.plus {
   padding-right: 36px;
 }
 
-button.info {
+.tooltip {
   position: absolute;
   top: 50%;
   right: 0;
@@ -699,6 +695,40 @@ button.info {
   transform: translateY(-50%);
   cursor: pointer;
   content: "";
+}
+
+.tooltiptext {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  visibility: hidden;
+  width: 256px;
+  padding: 16px 22px 18px;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  background-color: #333;
+  color: #FFF;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 99%;
+  left: 50%;
+  margin-left: -9px;
+  border-bottom: 9px solid #333;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 .modal-submit {
