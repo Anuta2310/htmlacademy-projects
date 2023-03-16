@@ -14,4 +14,5 @@ Projects created while studying with htmlacademy.ru
 
 ## Профессия «Фронтенд-разработчик #2» (Самостоятельный курс)
 ### Раздел 1. HTML и CSS. Профессиональная вёрстка сайтов
-+ [Barbershop](https://anuta2310.github.io/htmlacademy-projects/barbershop)
++ [Barbershop](https://anuta2310.github.io/htmlacademy-projects/barbershop) - учебный проект
++ [Sedona](https://anuta2310.github.io/htmlacademy-projects/sedona) - самостоятельная работа
