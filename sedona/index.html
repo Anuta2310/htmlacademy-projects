@@ -124,7 +124,8 @@
           <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="newsletter-email">Ваш email</label>
-            <input class="" id="newsletter-email" name="newsletter-email" type="email" placeholder="Ваш e-mail" required>
+            <input class="" id="newsletter-email" name="newsletter-email" type="email" placeholder="Ваш e-mail"
+              required>
             <button class="btn btn-blue newsletter-btn" type="submit">Подписаться</button>
           </form>
         </div>
@@ -177,6 +178,56 @@
       </section>
     </footer>
   </div>
+  <div class="modal-container">
+    <div class="modal">
+      <button class="modal-close-btn">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <h2>Поиск гостиницы в Седоне</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form-field">
+          <label for="arrival">Дата заезда:</label>
+          <div class="date-field">
+            <input class="date" type="date" name="arrival" id="arrival">
+            <p class="warning fail">Мы не можем отправить вас в прошлое.</p>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="departure">Дата выезда:</label>
+          <div class="date-field">
+            <input class="date" type="date" name="departure" id="departure">
+            <p class="warning success">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+        </div>
+        <div class="form-field guests">
+          <label for="adults">Взрослые:</label>
+          <button class="minus" type="button">
+            <span class="visually-hidden">Минус 1</span>
+          </button>
+          <input type="number" name="adults" id="adults" min="1" value="2">
+          <button class="plus" type="button">
+            <span class="visually-hidden">Плюс 1</span>
+          </button>
+        </div>
+        <div class="form-field guests">
+          <label class="kids" for="kids">Дети:
+            <button class="info" type="button">
+              <span class="visually-hidden">Дополнительная информация</span>
+            </button>
+          </label>
+          <button class="minus" type="button">
+            <span class="visually-hidden">Минус 1</span>
+          </button>
+          <input type="number" name="kids" id="kids" min="0" value="1">
+          <button class="plus" type="button">
+            <span class="visually-hidden">Плюс 1</span>
+          </button>
+        </div>
+        <button class="btn btn-blue modal-submit" type="submit">Найти</button>
+      </form>
+    </div>
+  </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
