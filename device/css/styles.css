@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url('../fonts/rubik/rubik-400.woff2') format('woff2'),
+    url('../fonts/rubik/Rubik-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url('../fonts/rubik/rubik-700.woff2') format('woff2'),
+    url('../fonts/rubik/Rubik-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-display: swap;
+  src: url('../fonts/raleway/raleway-800.woff2') format('woff2'),
+    url('../fonts/raleway/Raleway-ExtraBold.woff') format('woff');
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-width: 1440px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.67;
+  color: #444;
+  background-color: #FFF;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.header-logo:hover,
+.footer-logo:hover {
+  opacity: .6;
+}
+
+.header-logo:focus,
+.footer-logo:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.header-logo:active,
+.footer-logo:active {
+  outline: none;
+  opacity: .3;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: auto;
+  padding: 62px 0;
+  background-color: #444;
+  color: #FFF;
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: 240px auto 200px;
+}
+
+.footer-logo {
+  display: block;
+  width: 145px;
+  margin-bottom: 35px;
+}
+
+.footer-logo svg {
+  fill: #FFC700;
+}
+
+.footer-address {
+  grid-row: 1 / 3;
+  position: relative;
+}
+
+.footer-address::after {
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
+}
+
+.footer-address,
+.footer-phone {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.footer-nav,
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav {
+  gap: 35px;
+}
+
+.social {
+  gap: 15px;
+  margin-top: 46px;
+}
+
+.footer-nav_link {
+  font-family: 'Raleway';
+  font-weight: 800;
+  color: #FFF;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.footer-nav_link:hover {
+  color:#FFC700;
+  border-bottom: 2px solid #FFC700;
+}
+
+.footer-nav_link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.footer-nav_link:active {
+  outline: none;
+  opacity: .3;
+}
+
+.social_link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.social_link.fb {
+  background-image: url('../img/icons/fb.svg');
+}
+
+.social_link.inst {
+  background-image: url('../img/icons/inst.svg');
+}
+
+.social_link.tw {
+  background-image: url('../img/icons/tw.svg');
+}
+
+.social_link:hover {
+  background-color: #FFC700;
+}
+
+.social_link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.social_link:active {
+  background-color: #FFC700;
+  outline: none;
+  opacity: .3;
+}
+
+.footer-phone {
+  color: #FFF;
+  text-decoration: underline;
+  justify-self: end;
+}
+
+.footer-phone:hover {
+  color:#FFC700;
+}
+
+.footer-phone:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.footer-phone:active {
+  outline: none;
+  opacity: .3;
+}
+
+.academy-logo {
+  align-self: end;
+  justify-self: end;;
+}
+
+.academy-logo svg {
+  fill: #FFC700;
+}
+
+.academy-logo:hover svg {
+  fill: #FFF;
+}
+
+.academy-logo:focus {
+  outline: 1px solid #AF4FFF;
+}
+
+.academy-logo:active svg {
+  fill-opacity: .3;
+  fill: #FFF;
+}
+
+.academy-logo:active {
+  outline: none;
+}
+
+
+
+/* Footer Components States */
+
+
+
+
+
+
+
+
+
+
