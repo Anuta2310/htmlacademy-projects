@@ -16,3 +16,4 @@ Projects created while studying with htmlacademy.ru
 ### Раздел 1. HTML и CSS. Профессиональная вёрстка сайтов
 + [Barbershop](https://anuta2310.github.io/htmlacademy-projects/barbershop) - учебный проект
 + [Sedona](https://anuta2310.github.io/htmlacademy-projects/sedona) - самостоятельная работа
++ [Device](https://anuta2310.github.io/htmlacademy-projects/device) - самостоятельная работа
