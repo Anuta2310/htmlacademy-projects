@@ -9,3 +9,13 @@ function catalogToggler(){
   headerCatalog.classList.toggle('header-catalog_closed');
 };
 
+// User Cart Popover
+
+let userCart = document.querySelector('.user-cart');
+let popoverCart = document.querySelector('.popover-cart');
+
+userCart.addEventListener('click', toggleCart);
+
+function toggleCart(){
+  popoverCart.classList.toggle('popover-open');
+}

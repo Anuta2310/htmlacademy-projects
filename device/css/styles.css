@@ -105,6 +105,37 @@ ul {
   opacity: .3;
 }
 
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.btn:hover {
+  transition: all 300ms ease-out;
+}
+
+.btn:active {
+  transition: all 300ms ease-out;
+}
+
+.btn-disabled {
+  color: rgba(0, 0, 0, .3);
+}
+
 /* Logo */
 
 .logo {
@@ -201,11 +232,13 @@ ul {
 .search-button:hover:not(:disabled) {
   background-color: #000;
   color: #FFF;
+  transition: all 300ms ease-out;
 }
 
 .search-button:active:not(:disabled) {
   outline: none;
   color: rgba(255, 255, 255, .3);
+  transition: all 300ms ease-out;
 }
 
 .user-menu-list {
@@ -326,6 +359,103 @@ ul {
 
 .catalog-menu_item:not(:last-child){
   margin-bottom: 20px;
+}
+
+/* Cart-Popover */
+
+.user-menu-item {
+  position: relative;
+}
+
+.popover {
+  position: absolute;
+  top: 80px;
+  right: 6px;
+  z-index: 1;
+  width: 320px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #FFF;
+  background-color: #000;
+  min-height: 90px;
+  display: none;
+}
+
+.popover::after {
+  content: "";
+  position: absolute;
+  bottom: 99%;
+  left: 50%;
+  margin-left: -6px;
+  border-bottom: 8px solid #000;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+}
+
+.popover-open {
+  display: block;
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.cart-items-list {
+  padding: 20px;
+}
+
+.cart-item,
+.cart-item_link {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+}
+
+.cart-item_link {
+  color: #FFF;
+}
+
+.cart-item + .cart-item {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.cart-item_btn {
+  background-color: #000;
+}
+
+.cart-item_btn:hover {
+  opacity: .6;
+}
+
+.cart-item_btn:active {
+  opacity: .3;
+  outline: none;
+}
+
+.cart-details {
+  display: flex;
+  justify-content: space-between;
+  background: #1A1A1A;
+  padding: 10px 20px;
+}
+
+.btn-cart {
+  display: block;
+  margin: 20px;
+  padding: 14px;
+  background-color: #FFF;
+}
+
+.btn-cart:hover:not(.btn-disabled) {
+  background-color: #FFE17F;
+
+}
+
+.btn-cart:active:not(.btn-disabled) {
+  background-color: #FFE17F;
+  color: rgba(0, 0, 0, .3);
 }
 
 /* Footer */
