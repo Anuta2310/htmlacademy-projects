@@ -113,7 +113,71 @@
     </nav>
   </header>
   <main>
-
+    <div class="container">
+      <div class="carousel">
+        <button class="btn carousel_btn carousel_btn-prev" type="button" disabled>
+          <img src="img/icons/arrow-left.svg" alt="Предыдущий слайд">
+        </button>
+        <button class="btn carousel_btn carousel_btn-next" type="button">
+          <img src="img/icons/arrow-right.svg" alt="Следующий слайд">
+        </button>
+        <ul class="carousel_track">
+          <li class="carousel_slide carousel_slide-1 current-slide">
+            <img src="img/content/slide-1.png" alt="Квадрокоптер" width="560">
+            <div class="carousel_slide-content">
+              <h2>Порхает как бабочка, жалит как пчела!</h2>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a href="#">Подробнее</a>
+              <dl>
+                <dt>Дальность полета</dt>
+                <dd>800 м</dd>
+                <dt>Радиус поражения</dt>
+                <dd>50 м</dd>
+              </dl>
+            </div>
+          </li>
+          <li class="carousel_slide carousel_slide-2">
+            <img src="img/content/slide-2.png" alt="Фитнес-браслет" width="560">
+            <div class="carousel_slide-content">
+              <h2>Худеем правильно!</h2>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a href="#">Подробнее</a>
+              <dl>
+                <dt>Без подзарядки</dt>
+                <dd>48 часов</dd>
+              </dl>
+            </div>
+          </li>
+          <li class="carousel_slide carousel_slide-3">
+            <img src="img/content/slide-3.png" alt="Селфи-палка" width="560">
+            <div class="carousel_slide-content">
+              <h2>Делай селфи, как Бен Стиллер!</h2>
+              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <a href="#">Подробнее</a>
+              <dl>
+                <dt>Длина палки</dt>
+                <dd>8,5 м</dd>
+                <dt>Вес палки</dt>
+                <dd>5 кг</dd>
+                <dt>Материал</dt>
+                <dd>Карбон</dd>
+              </dl>
+            </div>
+          </li>
+        </ul>
+        <div class="carousel_nav">
+          <button class="btn carousel_indicator current-slide" type="button">
+            <span class="visually-hidden">1 слайд</span>
+          </button>
+          <button class="btn carousel_indicator" type="button">
+            <span class="visually-hidden">2 слайд</span>
+          </button>
+          <button class="btn carousel_indicator" type="button">
+            <span class="visually-hidden">3 слайд</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="container">
@@ -157,6 +221,7 @@
       </div>
     </div>
   </footer>
-  <script src="index.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 </html>
