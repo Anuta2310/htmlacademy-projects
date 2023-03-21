@@ -117,15 +117,12 @@ ul {
   text-transform: uppercase;
   cursor: pointer;
   border: 0;
-  opacity: 1;
-  transition: opacity .3s ease-out, background-color .3s ease-out, color .3s ease-out;
 }
 
 .btn:focus {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
-
 
 .btn-disabled {
   color: rgba(0, 0, 0, .3);
@@ -135,7 +132,10 @@ ul {
   position: relative;
   width: 220px;
   padding: 10px 5px;
+  background-color: transparent;
+  transition: background-color 100ms ease-in-out;
 }
+
 .btn-line::before {
   position: absolute;
   z-index: -1;
@@ -147,6 +147,15 @@ ul {
   height: 8px;
   background-color: #FFE17F;
 }
+
+.btn-line:hover {
+  background-color: #FFE17F;
+}
+
+.btn-line:active {
+  background-color: #FFCC33;
+}
+
 
 /* Logo */
 
@@ -649,6 +658,8 @@ ul {
   background: transparent;
   border: 0;
   z-index: 1;
+  opacity: 1;
+  transition: opacity 50ms ease-out;
 }
 
 .carousel_btn-prev {
@@ -659,9 +670,20 @@ ul {
   left: 540px;
 }
 
-.carousel_btn:disabled {
+.carousel_btn:disabled,
+.carousel_indicator:disabled {
   opacity: .1;
   cursor: default;
+}
+
+.carousel_btn:hover:not(:disabled),
+.carousel_indicator:hover:not(:disabled){
+  opacity: .6;
+}
+
+.carousel_btn:active:not(:disabled),
+.carousel_indicator:active:not(:disabled){
+  opacity: .3;
 }
 
 .carousel_slide {
