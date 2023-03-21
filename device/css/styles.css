@@ -772,3 +772,48 @@ ul {
 .carousel_indicator.current-slide {
   background: #000;
 }
+
+/* Categories */
+
+.categories_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.categories_item-link {
+  width: 160px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: opacity .1s ease-in-out;
+}
+
+.categories_item-link:hover .categories_item-img {
+  background-color: #FFC700;
+}
+
+.categories_item-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.categories_item-link:active {
+  opacity: .3;
+  outline: none;
+}
+
+.categories_item-img {
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+  transition: background-color .1s ease-in-out;
+}
+
+.categories_item-text {
+  font-family: 'Raleway';
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
