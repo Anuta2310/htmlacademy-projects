@@ -49,3 +49,15 @@ function onTabClick(item) {
 };
 
 document.querySelector('.tabs__nav-btn').click();
+
+// Modal Open / Close
+
+const modal = document.querySelector('.modal-container');
+const modalCloseBtn = document.querySelector('.modal-close-btn');
+const modalOpen = document.querySelector('.modal-open');
+modalCloseBtn.onclick = function(){
+  modal.classList.add('close');
+}
+modalOpen.onclick = function(){
+  modal.classList.remove('close');
+}

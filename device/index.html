@@ -275,6 +275,13 @@
         </div>
       </div>
     </section>
+    <section class="delivery-banner container modal-open">
+      <img class="delivery_img" src="img/icons/truck.svg" alt="" width="47">
+      <h2 class="delivery_title">Доставим редкий товар под заказ</h2>
+      <button class="delivery_info" type="button">
+        <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+      </button>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -324,6 +331,53 @@
       </div>
     </div>
   </footer>
+  <div class="modal-container close">
+    <div class="modal">
+      <div class="modal_header">
+        <h2 class="modal_title">Доставка под заказ</h2>
+        <button class="modal-close-btn btn">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+      </div>
+      <form class="modal_form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="modal_form-field username-field">
+          <label class="modal_label" for="username">Ваше имя:</label>
+          <input class="modal_input" type="text" id="username" name="username" placeholder="Введите имя" required>
+          <p class="warning-tip">Добавьте имя</p>
+          <p class="warning-fail">Забавное у вас имя</p>
+        </div>
+        <div class="modal_form-field email-field">
+          <label class="modal_label" for="email">Ваш e-mail:</label>
+          <input class="modal_input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+          <p class="warning-tip">Добавьте e-mail</p>
+          <p class="warning-fail">Забавный у вас адрес</p>
+        </div>
+        <div class="modal_form-field details-field">
+          <label class="modal_label" for="details">Что нужно привезти:</label>
+          <input class="modal_input" type="text" id="details" name="details" placeholder="В свободной форме" required>
+        </div>
+        <div class="modal_form-field">
+          <label class="modal_label" for="number">Количество:
+            <span class="tooltip">
+              <span class="tooltiptext">
+                Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+              </span>
+            </span>
+          </label>
+          <div class="number-field">
+            <button class="minus-btn btn" type="button">
+              <span class="visually-hidden">Минус 1</span>
+            </button>
+            <input class="modal_input" type="number" id="number" name="number" min="1" max="10" step="1" value="1">
+            <button class="plus-btn btn" type="button">
+              <span class="visually-hidden">Плюс 1</span>
+            </button>
+          </div>
+        </div>
+        <button class="btn btn-line modal_submit-btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
   <script src="js/index.js"></script>
   <script src="js/carousel.js"></script>
 </body>
