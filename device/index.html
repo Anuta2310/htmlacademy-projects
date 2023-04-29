@@ -78,7 +78,7 @@
           </li>
         </ul>
       </div>
-      <div class="header-menu">
+      <div class="header-menu title-2">
         <div class="catalog-toggler">
           <p class="catalog_btn-text">Каталог товаров</p>
           <button class="catalog_btn"><span class="visually-hidden">Показать</span></button>
@@ -136,7 +136,7 @@
           <li class="carousel_slide carousel_slide-1 current-slide">
             <img src="img/content/slide-1.png" alt="Квадрокоптер" width="560">
             <div class="carousel_slide-content">
-              <h2 class="carousel_slide-title">Порхает как бабочка, жалит как пчела!</h2>
+              <h2 class="carousel_slide-title main-title">Порхает как бабочка, жалит как пчела!</h2>
               <p class="carousel_slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
               <a class="btn btn-line" href="#">Подробнее</a>
@@ -256,19 +256,19 @@
         </div>
         <div class="tabs__content">
           <div class="tabs__item delivery" id="tab_1">
-            <h2 class="tabs__item-title">Доставка</h2>
+            <h2 class="tabs__item-title main-title">Доставка</h2>
             <p class="tabs__item-text">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
           <div class="tabs__item guarantee" id="tab_2">
-            <h2 class="tabs__item-title">Гарантия</h2>
+            <h2 class="tabs__item-title main-title">Гарантия</h2>
             <p class="tabs__item-text">Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.</p>
           </div>
           <div class="tabs__item credit" id="tab_3">
-            <h2 class="tabs__item-title">Кредит</h2>
+            <h2 class="tabs__item-title main-title">Кредит</h2>
             <p class="tabs__item-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
               кредита. Выгодные для банка, разумеется.</p>
           </div>
@@ -277,10 +277,40 @@
     </section>
     <section class="delivery-banner container modal-open">
       <img class="delivery_img" src="img/icons/truck.svg" alt="" width="47">
-      <h2 class="delivery_title">Доставим редкий товар под заказ</h2>
+      <h2 class="delivery_title title-2">Доставим редкий товар под заказ</h2>
       <button class="delivery_info" type="button">
         <span class="visually-hidden">Посмотреть дополнительную информацию</span>
       </button>
+    </section>
+    <section class="information container">
+      <div class="about-us">
+        <h2 class="info__title main-title">О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+        <ul class="info__transport text-b">
+          <li>Меловые линии</li>
+          <li>СДИК</li>
+          <li>ТоксБерри</li>
+        </ul>
+        <a class="btn btn-line about-us__btn" href="#">Подробнее о нас</a>
+      </div>
+      <div class="contacts">
+        <h2 class="info__title main-title">Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+        <div>
+          <h3 class="info__subtitle title-3">Интернет-магазин «Девайс»</h3>
+          <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+         <a class="link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
+        <div>
+          <h3 class="info__subtitle title-3">Время работы</h3>
+          <ul>
+            <li>пн—пт: с 10:00 до 22:00</li>
+            <li>сб—вс: с 10:00 до 19:00</li>
+          </ul>
+        </div>
+        <a class="btn btn-line contacts__btn" href="#">Напишите нам</a>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -293,7 +323,7 @@
       </a>
       <div class="footer-cols">
         <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        <ul class="footer-nav">
+        <ul class="footer-nav title-2">
           <li>
             <a class="link footer-nav_link" href="#">Доставка</a>
           </li>
@@ -334,7 +364,7 @@
   <div class="modal-container close">
     <div class="modal">
       <div class="modal_header">
-        <h2 class="modal_title">Доставка под заказ</h2>
+        <h2 class="main-title">Доставка под заказ</h2>
         <button class="modal-close-btn btn">
           <span class="visually-hidden">Закрыть окно</span>
         </button>
@@ -368,7 +398,7 @@
             <button class="minus-btn btn" type="button">
               <span class="visually-hidden">Минус 1</span>
             </button>
-            <input class="modal_input" type="number" id="number" name="number" min="1" max="10" step="1" value="1">
+            <input class="modal_input" type="number" id="number" name="number" min="1" max="10" step="1" value="1" readonly>
             <button class="plus-btn btn" type="button">
               <span class="visually-hidden">Плюс 1</span>
             </button>
