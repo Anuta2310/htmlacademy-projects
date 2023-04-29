@@ -139,7 +139,7 @@
               <h2 class="carousel_slide-title main-title">Порхает как бабочка, жалит как пчела!</h2>
               <p class="carousel_slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
-              <a class="btn btn-line" href="#">Подробнее</a>
+              <a class="btn btn-line carousel_slide-btn" href="#">Подробнее</a>
               <dl class="carousel_slide-info">
                 <div class="carousel_slide-details">
                   <dd>800 м</dd>
@@ -158,7 +158,7 @@
               <h2 class="carousel_slide-title">Худеем <br> правильно!</h2>
               <p class="carousel_slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
                 занятия и соблюдать диету.</p>
-              <a class="btn btn-line" href="#">Подробнее</a>
+              <a class="btn btn-line carousel_slide-btn" href="#">Подробнее</a>
               <dl class="carousel_slide-info">
                 <div class="carousel_slide-details">
                   <dd>48 часов</dd>
@@ -173,7 +173,7 @@
               <h2 class="carousel_slide-title">Делай селфи, <br> как Бен Стиллер!</h2>
               <p class="carousel_slide-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
                 Карл!) метров длиной и весом всего 5 кг.</p>
-              <a class="btn btn-line" href="#">Подробнее</a>
+              <a class="btn btn-line carousel_slide-btn" href="#">Подробнее</a>
               <dl class="carousel_slide-info">
                 <div class="carousel_slide-details">
                   <dd>8,5 м</dd>
@@ -312,6 +312,22 @@
         <a class="btn btn-line contacts__btn" href="#">Напишите нам</a>
       </div>
     </section>
+    <section class="newsletter">
+      <div class="container">
+        <header class="newsletter__header">
+          <h2 class="main-title">Подпишитесь <br> на рассылку</h2>
+          <p>Еженедельный дайджест с обзорами новинок, <br> длительными тест-драйвами, распаковками, а также акции, <br> спецпредложения и вот это вот всё.</p>
+        </header>
+        <div class="newsletter__content">
+          <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="visually-hidden" for="newsletter__email">Ваш e-mail</label>
+            <input class="newsletter__email" type="email" id="newsletter__email" name="newsletter__email" placeholder="Ваш e-mail" required>
+            <button class="btn newsletter__btn" type="submit">Подписаться</button>
+          </form>
+          <p class="newsletter__text">Это бесплатно</p>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -372,13 +388,13 @@
       <form class="modal_form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="modal_form-field username-field">
           <label class="modal_label" for="username">Ваше имя:</label>
-          <input class="modal_input" type="text" id="username" name="username" placeholder="Введите имя" required>
+          <input class="modal_input username" type="text" id="username" name="username" placeholder="Введите имя" required>
           <p class="warning-tip">Добавьте имя</p>
           <p class="warning-fail">Забавное у вас имя</p>
         </div>
         <div class="modal_form-field email-field">
           <label class="modal_label" for="email">Ваш e-mail:</label>
-          <input class="modal_input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+          <input class="modal_input email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
           <p class="warning-tip">Добавьте e-mail</p>
           <p class="warning-fail">Забавный у вас адрес</p>
         </div>

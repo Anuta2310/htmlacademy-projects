@@ -71,6 +71,12 @@ ul {
   list-style: none;
 }
 
+input {
+  font-family: 'Rubik';
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -172,8 +178,8 @@ ul {
 }
 
 .btn-line {
-  width: 220px;
-  padding: 10px 5px;
+  display: inline-block;
+  padding: 10px 20px;
   background: linear-gradient(transparent 0 40%, #FFE17F 40% 60%, transparent 60% 100%);
   transition: background-color 100ms ease-in-out;
 }
@@ -236,7 +242,6 @@ ul {
 .search-input,
 .search-button {
   padding: 10px;
-  font-family: inherit;
   font-size: 16px;
   line-height: 1.25;
   border: 2px solid #000000;
@@ -743,6 +748,10 @@ ul {
   margin-bottom: 60px;
 }
 
+.carousel_slide-btn {
+  width: 220px;
+}
+
 .carousel_slide-info {
   display: grid;
   grid-auto-flow: column;
@@ -1052,9 +1061,16 @@ ul {
   padding: 20px 60px 20px 20px;
   background-color: #F0F0F0;
   border: 0;
-  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
+}
+
+.modal_input.username {
+  background: #F0F0F0 url('../img/icons/login-gr.svg') no-repeat right 20px top 50%;
+}
+
+.modal_input.email {
+  background: #F0F0F0 url('../img/icons/mail.svg') no-repeat right 20px top 50%;
 }
 
 .modal_input:not([type="number"]):hover {
@@ -1240,4 +1256,72 @@ ul {
 
 .contacts__btn {
   width: 260px;
+}
+
+/* Newsletter */
+
+.newsletter {
+  background-color: #F0F0F0;
+  padding: 64px 0 56px;
+}
+
+.newsletter__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 144px;
+}
+
+.newsletter__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsletter__form {
+  width: 810px;
+  display: flex;
+}
+
+.newsletter__email {
+  flex-grow: 1;
+  padding: 14px 16px;
+  background-color: #F0F0F0;
+  border: 0;
+  border-bottom: 3px solid #C4C4C4;
+}
+
+.newsletter__email::placeholder {
+  color: #444;
+  opacity: .5;
+}
+
+.newsletter__email:focus {
+  background-color: #DCDCDC;
+  outline: none;
+}
+
+.newsletter__email.error {
+  border-bottom: 3px solid #FF3D3D;
+}
+
+.newsletter__btn {
+  padding: 18px 39px;
+  border: 3px solid #CECECE;
+  transition: background-color ease-out .2s, color ease-out .2s;
+}
+
+.newsletter__btn:hover {
+  background-color: #000;
+  border: 3px solid #000000;
+  color: #FFF;
+}
+
+.newsletter__btn:active {
+  color: rgba(255, 255, 255, .3);
+}
+
+.newsletter__text {
+  padding-left: 32px;
+  background: #F0F0F0 url('../img/icons/tick-gr.svg') no-repeat 0 50%;
 }
