@@ -295,17 +295,21 @@ input {
 
 .user-menu-list {
   display: flex;
-  gap: 36px;
+  gap: 25px;
 }
 
 .user-menu-item:first-child {
-  margin-right: auto;
+  flex-grow: 1;
 }
 
 .user-login {
   display: block;
   padding-left: 27px;
   background: url('../img/icons/login.svg') no-repeat left center;
+}
+
+.user-logout {
+  opacity: .3;
 }
 
 .user-compare {
@@ -1325,3 +1329,169 @@ input {
   padding-left: 32px;
   background: #F0F0F0 url('../img/icons/tick-gr.svg') no-repeat 0 50%;
 }
+
+/* CATALOG */
+
+.catalog__header {
+  padding: 35px 60px;
+}
+
+.catalog__title {
+  margin-bottom: 16px;
+}
+
+.catalog__brdcrmbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 36px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.catalog__brdcrmbs-item {
+  position: relative;
+}
+
+.catalog__brdcrmbs-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: -20px;
+  width: 4px;
+  height: 7px;
+  background: url('../img/icons/arrow-br.svg') no-repeat center;
+}
+
+.catalog__brdcrmbs-item:not(:last-child):hover{
+  opacity: .6;
+}
+
+.catalog__content-wrap {
+  background-color: #F0F0F0;
+}
+
+.catalog__content {
+  display: grid;
+  grid-template-columns: 320px auto;
+}
+
+/* catalog filter */
+
+.catalog__filter {
+  padding: 0 60px;
+  margin-bottom: 30px;
+}
+
+.filter__title {
+  padding: 25px 0;
+  margin-bottom: 35px;
+}
+
+.filter__group {
+  border-top: 2px solid #000;
+  padding-top: 12px;
+}
+
+.filter__legend {
+  margin-bottom: 20px;
+}
+
+.filter__btn {
+  width: 100%;
+}
+
+.range {
+  margin-bottom: 35px;
+}
+
+.range-scale {
+  position: relative;
+  margin: 30px 0 10px;
+  height: 2px;
+  background-color: #DCDCDC;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #EBEBEB;
+  border: 2px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color ease-out 50ms;
+}
+
+.range-toggle:hover {
+  border: 2px solid rgba(0, 0, 0, .5);
+}
+
+.range-toggle:active {
+  background: #000;
+  opacity: 1;
+}
+
+.toggle-min {
+  left: -9px;
+  top: -9px;
+}
+.toggle-max {
+  right: -9px;
+  top: -9px;
+}
+
+.range-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-label {
+  max-width: 80px;
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  opacity: .3;
+}
+
+.range-label.min::before,
+.range-label.max::before {
+  position: absolute;
+  left: -22px;
+  top: 0;
+}
+
+.range-label.min::before {
+  content: 'от';
+}
+.range-label.max::before {
+  content: 'до';
+}
+
+.range-label:focus-within {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.range-input {
+  width: 100%;
+  background-color: #F0F0F0;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  line-height: 18px;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
