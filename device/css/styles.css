@@ -1401,6 +1401,12 @@ input {
   width: 100%;
 }
 
+.filter__label {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+}
+
 .range {
   margin-bottom: 35px;
 }
@@ -1495,3 +1501,68 @@ input {
   margin: 0;
 }
 
+.filter__list {
+  margin-bottom: 35px;
+}
+
+.filter__list li:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  cursor: pointer;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  background-color: #F0F0F0;
+  border: 2px solid #CCC;
+  border-radius: 3px;
+}
+
+.control:hover {
+  opacity: .6;
+}
+
+.control:active {
+  opacity: .3;
+}
+
+.control-input:focus + .control-mark {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.control-input:checked + .control-mark {
+  border: 2px solid #000;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url('../img/icons/tick.svg') no-repeat center;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+  left: 4.4px;
+  top: 4.4px;
+}
