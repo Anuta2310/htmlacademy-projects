@@ -1363,10 +1363,6 @@ input {
   background: url('../img/icons/arrow-br.svg') no-repeat center;
 }
 
-.catalog__brdcrmbs-item:not(:last-child):hover{
-  opacity: .6;
-}
-
 .catalog__content-wrap {
   background-color: #F0F0F0;
 }
@@ -1565,4 +1561,52 @@ input {
   border-radius: 50%;
   left: 4.4px;
   top: 4.4px;
+}
+
+/* Catalog Sorting */
+
+.catalog__sorting {
+  padding: 20px 40px;
+}
+
+.sorting__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting__select {
+  padding-right: 50px;
+  font-family: inherit;
+  font-size: 18px;
+  border: 0;
+  background-color: #F0F0F0;
+  cursor: pointer;
+}
+
+.view-oder {
+  display: flex;
+}
+.view-oder-btn {
+  width: 30px;
+  height: 30px;
+  opacity: .2;
+  transition: opacity ease-out .1s;
+}
+
+.btn-up {
+  background: #F0F0F0 url('../img/icons/sort-up.svg') no-repeat center;
+}
+
+.btn-down {
+  background: #F0F0F0 url('../img/icons/sort-up.svg') no-repeat center;
+  transform: rotate(180deg);
+}
+
+.view-oder-btn:hover {
+  opacity: .5;
+}
+
+.view-oder-btn:active {
+  opacity: 1;
 }

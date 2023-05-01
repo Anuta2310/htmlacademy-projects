@@ -128,13 +128,13 @@
   </header>
   <main>
     <section class="catalog__header container">
-      <h1 class="catalog__title main-title">Моноподы для селфи</h1>
+      <h1 class="catalog__title main-title link">Моноподы для селфи</h1>
       <ul class="catalog__brdcrmbs">
         <li class="catalog__brdcrmbs-item">
-          <a class="catalog__brdcrmbs-link" href="index.html">Главная</a>
+          <a class="catalog__brdcrmbs-link link" href="index.html">Главная</a>
         </li>
         <li class="catalog__brdcrmbs-item">
-          <a class="catalog__brdcrmbs-link" href="#">Каталог товаров</a>
+          <a class="catalog__brdcrmbs-link link" href="#">Каталог товаров</a>
         </li>
         <li class="catalog__brdcrmbs-item">
           <a class="catalog__brdcrmbs-link">Моноподы для селфи</a>
@@ -234,7 +234,25 @@
         </section>
         <div class="catalog__col">
           <section class="catalog__sorting">
-            <h2 class="title-2">сортировка:</h2>
+            <form class="sorting__form" action="https://echo.htmlacademy.ru/" method="get">
+              <label for="sorting">
+                <h2 class="title-2">сортировка:</h2>
+              </label>
+              <select class="sorting__select link" name="sorting" id="sorting">
+                <option value="popular">Популярные</option>
+                <option value="cheap">Дешевые</option>
+                <option value="expensive">Дорогие</option>
+              </select>
+              <button class="visually-hidden" type="submit">Отсортировать товары</button>
+              <div class="view-oder">
+                <a class="btn view-oder-btn btn-up" href="#">
+                  <span class="visually-hidden">Снизу вверх</span>
+                </a>
+                <a class="btn view-oder-btn btn-down" href="#">
+                  <span class="visually-hidden">Сверху вниз</span>
+                </a>
+              </div>
+            </form>
           </section>
           <ul class="catalog__list">
 
