@@ -1629,10 +1629,6 @@ input {
   cursor: pointer;
 }
 
-.catalog__card.new {
-  background: url(../img/icons/new.svg) no-repeat;
-}
-
 .catalog__card:hover .catalog__card-overlay {
   background: rgba(240, 240, 240, .8);
 }
@@ -1710,4 +1706,57 @@ input {
 .catalog__btn:active {
   border: 3px solid #000;
   opacity: .3;
+}
+
+/* Pagination */
+
+.catalog__pagination {
+  display: flex;
+  background-color: #EBEBEB;
+}
+
+.catalog__pages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.page-btn {
+  padding: 25px;
+  transition: background-color ease-out .1s, color ease-out .1s;
+}
+
+.page-btn:hover {
+  background-color: #DCDCDC;
+}
+
+.page-btn:active {
+  color: rgba(0, 0, 0, .3);
+}
+
+.page-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444;
+  opacity: .3;
+  transition: opacity .1s ease-out;
+}
+
+.page-current {
+  opacity: .6;
+}
+
+.page-link:hover {
+  opacity: 1;
+}
+
+.page-link:active {
+  opacity: .1;
 }
