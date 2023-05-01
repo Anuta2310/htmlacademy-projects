@@ -1629,6 +1629,16 @@ input {
   cursor: pointer;
 }
 
+.catalog__card.new::before {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  background: url('../img/icons/new.svg') no-repeat center;
+  content: '';
+}
+
 .catalog__card:hover .catalog__card-overlay {
   background: rgba(240, 240, 240, .8);
 }
