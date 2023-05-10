@@ -1,0 +1,79 @@
+.stats {
+  background-color: @bg-color-dark;
+}
+
+.stats__wrapper {
+  @media (min-width: @tablet) {
+    padding: 0 64px;
+  }
+  @media (min-width: @desktop) {
+    margin: auto;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.stats__header {
+  background-color: @bg-color-light;
+}
+
+.stats__slogan {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.stats__intro {
+  font-size: 20px;
+}
+
+.stats__legend {
+  line-height: 1;
+
+  &--top {
+    color: rgba(0, 0, 0, 0.3);
+    @media (max-width: @mobileonly) {
+      display: none;
+    }
+  }
+
+  &--bottom {
+    color: rgba(255, 255, 255, 0.3);
+    @media (min-width: @tablet) {
+      display: none;
+    }
+  }
+}
+
+.stats__list {
+  color: #fff;
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.stats__item {
+  line-height: 1;
+
+  &:nth-child(odd) {
+    background-color: rgba(45, 38, 130, 0.05);
+  }
+  &:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+
+  @media (min-width: @tablet) {
+    &:nth-child(1),
+    &:nth-child(4) {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+}
+
+.stats__num {
+  font-weight: 700;
+  font-size: 40px;
+}

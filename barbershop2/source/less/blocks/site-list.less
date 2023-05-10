@@ -1,0 +1,23 @@
+.site-list {
+  @media (min-width: @tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.site-list__item {
+  &:not(:last-child) {
+    margin-right: 34px;
+  }
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @color-light;
+}
+
+.site-list__link {
+  display: block;
+  padding: 24px 0;
+}

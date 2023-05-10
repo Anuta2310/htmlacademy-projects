@@ -1,0 +1,26 @@
+.features {
+  background-color: @bg-color-dark;
+  color: @color-light;
+}
+
+.features__list {
+  display: flex;
+  @media (min-width: @tablet) and (max-width: @desktop) {
+    flex-direction: column;
+  }
+}
+
+.features__title {
+  .title;
+}
+
+.features__descr {
+  font-size: 20px;
+}
+
+.features__toggles {
+  text-align: center;
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}

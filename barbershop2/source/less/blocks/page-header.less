@@ -1,0 +1,36 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #242424;
+  color: @color-light;
+
+  @media (min-width: @tablet) {
+    background-image: url('/img/back-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px;
+
+  @media (min-width: @tablet) {
+    align-items: start;
+    order: 2;
+    height: 400px;
+    padding: 30px;
+  }
+
+  @media (min-width: @desktop) {
+    height: 650px;
+    padding: 56px;
+  }
+}
+
+.page-header__logo img {
+  width: 226px;
+  height: 30px;
+}

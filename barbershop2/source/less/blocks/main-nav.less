@@ -1,0 +1,20 @@
+.main-nav {
+  background-color: #000;
+  @media (max-width: @mobileonly) {
+    background-color: #6A4D38;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: @tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 64px;
+  }
+}
