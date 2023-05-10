@@ -2,8 +2,10 @@ barbershop2/node_modules/
 barbershop2/gulpfile.js
 barbershop2/package-lock.json
 barbershop2/package.json
+barbershop2/.editorconfig
 cat-energy/node_modules/
 cat-energy/gulpfile.js
 cat-energy/package-lock.json
 cat-energy/package.json
+cat-energy/.editorconfig
 sedona/.editorconfig
