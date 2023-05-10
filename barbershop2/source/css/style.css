@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'PT Sans Narrow';
-  src: url('/fonts/PTSans-Narrow.woff2') format('woff2'), url('/fonts/PTSans-Narrow.woff') format('woff');
+  src: url('../fonts/PTSans-Narrow.woff2') format('woff2'), url('../fonts/PTSans-Narrow.woff') format('woff');
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: 'PT Sans Narrow';
-  src: url('/fonts/PTSans-NarrowBold.woff2') format('woff2'), url('/fonts/PTSans-NarrowBold.woff') format('woff');
+  src: url('../fonts/PTSans-NarrowBold.woff2') format('woff2'), url('../fonts/PTSans-NarrowBold.woff') format('woff');
   font-weight: 700;
   font-display: swap;
 }
@@ -500,13 +500,13 @@ img {
   background-position: center;
 }
 .social__link--vk {
-  background-image: url('/img/vk-icon.svg');
+  background-image: url('../img/vk-icon.svg');
 }
 .social__link--fb {
-  background-image: url('/img/fb-icon.svg');
+  background-image: url('../img/fb-icon.svg');
 }
 .social__link--inst {
-  background-image: url('/img/inst-icon.svg');
+  background-image: url('../img/inst-icon.svg');
 }
 .social__link:hover {
   border: 1px solid #777777;
