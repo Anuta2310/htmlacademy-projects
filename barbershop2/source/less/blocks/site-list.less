@@ -7,17 +7,24 @@
 }
 
 .site-list__item {
-  &:not(:last-child) {
-    margin-right: 34px;
-  }
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 18px;
   text-transform: uppercase;
   color: @color-light;
+
+  @media (min-width: @tablet) {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+  }
 }
 
 .site-list__link {
+  position: relative;
   display: block;
-  padding: 24px 0;
+  padding: 18px 21px;
+  background-color: #826550;
+  border-top: 1px solid #886E5B;
+  border-bottom: 1px solid #71543F;
 }

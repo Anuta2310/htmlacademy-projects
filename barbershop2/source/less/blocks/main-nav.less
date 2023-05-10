@@ -1,13 +1,118 @@
 .main-nav {
+  position: relative;
   background-color: #000;
   @media (max-width: @mobileonly) {
-    background-color: #6A4D38;
+    background-color: #826550;
+    min-height: 55px;
   }
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 55px;
+  background-color: #6A4D38;
+  border: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: #624530;
+  }
+
   @media (min-width: @tablet) {
     display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    width: 36px;
+    height: 2px;
+    background-color: #fff;
+    box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+  }
+
+  &:active::before {
+    background-color: fade(#fff, 30%);
+    box-shadow: 0 8px 0 0 fade(#fff, 30%), 0 16px 0 0 fade(#fff, 30%);
+  }
+}
+
+.main-nav--open .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 17px;
+    width: 36px;
+    height: 2px;
+    background-color: #fff;
+  }
+  &::before {
+    transform: rotate(45deg) ;
+    box-shadow: none;
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+  &:active::before,
+  &:active::after {
+    background-color: fade(#fff, 30%);
+  }
+}
+
+@media (max-width: @mobileonly) {
+  .main-nav--closed .site-list__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+  .main-nav--closed .site-list__item--active a {
+    padding-right: 70px;
+    padding-left: 70px;
+    text-align: center;
+  }
+  .main-nav--closed .user-list {
+    display: none;
+  }
+
+}
+
+.main-nav--open .main-nav__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 70px;
+  z-index: 10;
+  min-height: 80vh;
+  background-color: #6A4D38;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(90deg, #000 0%, transparent 100%);
+    opacity: .3;
   }
 }
 
