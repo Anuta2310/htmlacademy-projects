@@ -1,4 +1,5 @@
 .user-list {
+  margin-left: auto;
   @media (min-width: @tablet) {
     font-weight: 700;
   }
@@ -7,10 +8,35 @@
 .user-list__login {
   position: relative;
   display: block;
+  min-height: 100%;
   padding: 18px 21px;
   padding-left: 49px;
   line-height: 18px;
-
+  @media (max-width: @mobileonly) {
+    &:hover,
+    &:active {
+      background-color: #755A46;
+    }
+    &:active {
+      color: fade(#fff, 30%);
+    }
+  }
+  @media (min-width: @tablet) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-transform: uppercase;
+  }
+  @media (min-width: @desktop) {
+    padding: 30px;
+    padding-left: 64px;
+    &:hover {
+      color: #000;
+      background-color: #fff;
+    }
+    &:active {
+      color: fade(#000, 30%);
+    }
+  }
   span {
     @media (min-width: @tablet) and (max-width: @desktop) {
       .visually-hidden;
@@ -18,12 +44,31 @@
   }
 }
 
+.user-list__login:hover .user-list__login-icon {
+  @media (min-width: @tablet) {
+    fill: #826550;
+  }
+  @media (min-width: @desktop) {
+    fill: fade(#000, 30%);
+  }
+}
+.user-list__login:active .user-list__login-icon {
+  fill: fade(#fff, 30%);
+  @media (min-width: @desktop) {
+    fill: fade(#000, 10%);
+  }
+}
+
+
 .user-list__login-icon {
   position: absolute;
-  top: 17px;
+  top: 50%;
   left: 21px;
   width: 16px;
   height: 16px;
-  opacity: .3;
-  fill: #fff;
+  fill: fade(#fff, 30%);
+  transform: translateY(-8px);
+  @media (min-width: @desktop) {
+    left: 30px
+  }
 }
